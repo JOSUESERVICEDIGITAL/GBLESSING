@@ -1,0 +1,336 @@
+ <section id="rejoindre" class="py-6 py-lg-8 position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(29,78,216,0.05) 0%, rgba(249,115,22,0.05) 100%);">
+        <!-- Éléments décoratifs -->
+        <div class="position-absolute top-0 start-0 w-50 h-50" style="background: radial-gradient(circle, rgba(29,78,216,0.1) 0%, transparent 70%); transform: translate(-25%, -25%);"></div>
+        <div class="position-absolute bottom-0 end-0 w-50 h-50" style="background: radial-gradient(circle, rgba(249,115,22,0.1) 0%, transparent 70%); transform: translate(25%, 25%);"></div>
+        
+        <div class="container position-relative">
+            <div class="row align-items-center g-5">
+                <!-- Photo de l'équipe (grande image) -->
+                <div class="col-lg-7">
+                    <div class="position-relative rounded-4 overflow-hidden shadow-xl" style="height: 500px;">
+                        <!-- Image principale de l'équipe -->
+                        <img src="assets/images/groupe.jpeg" 
+                             alt="Équipe du Groupe Blessing"
+                             class="w-100 h-100 object-fit-cover"
+                             style="filter: brightness(0.95);"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600&q=80'">
+                        
+                        <!-- Overlay décoratif -->
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(45deg, rgba(29,78,216,0.2) 0%, rgba(249,115,22,0.2) 100%);"></div>
+                        
+                        <!-- Badge flottant -->
+                        <div class="position-absolute top-4 start-4 bg-white px-3 py-2 rounded-3 shadow-sm">
+                            <span class="fw-bold text-primary">👥 Notre Équipe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carte avec texte défilant -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-xl overflow-hidden" style="border-radius: 20px;">
+                        <!-- En-tête de la carte -->
+                        <div class="card-header border-0 py-4" style="background: linear-gradient(135deg, #f97316 0%, #dc2626 100%);">
+                            <div class="text-center">
+                                <h3 class="h2 fw-bold text-white mb-2">
+                                    <i class="bi bi-people-fill me-2"></i>Rejoignez-Nous
+                                </h3>
+                                <p class="text-white opacity-90 mb-0">Faites partie de notre mission</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Corps de la carte avec texte défilant -->
+                        <div class="card-body p-4 p-lg-5 position-relative" style="min-height: 300px; background: #fff;">
+                            <!-- Texte défilant -->
+                            <div class="marquee-container position-relative overflow-hidden mb-4" style="height: 180px;">
+                                <div class="marquee-content position-absolute w-100">
+                                    <!-- Message 1 -->
+                                    <div class="marquee-item text-center py-3">
+                                        <div class="mb-3">
+                                            <i class="bi bi-heart-fill fs-1 text-danger"></i>
+                                        </div>
+                                        <h4 class="h5 fw-bold text-dark mb-2">Partagez Votre Amour</h4>
+                                        <p class="text-muted">Rejoignez notre mission d'amour et de compassion envers les plus démunis.</p>
+                                    </div>
+                                    
+                                    <!-- Message 2 -->
+                                    <div class="marquee-item text-center py-3">
+                                        <div class="mb-3">
+                                            <i class="bi bi-hand-thumbs-up-fill fs-1 text-warning"></i>
+                                        </div>
+                                        <h4 class="h5 fw-bold text-dark mb-2">Faites la Différence</h4>
+                                        <p class="text-muted">Chaque petite action compte. Ensemble, nous pouvons changer des vies.</p>
+                                    </div>
+                                    
+                                    <!-- Message 3 -->
+                                    <div class="marquee-item text-center py-3">
+                                        <div class="mb-3">
+                                            <i class="bi bi-share-fill fs-1 text-primary"></i>
+                                        </div>
+                                        <h4 class="h5 fw-bold text-dark mb-2">Partagez Vos Talents</h4>
+                                        <p class="text-muted">Que vous soyez musicien, organisateur ou simplement plein de bonne volonté, vous avez votre place.</p>
+                                    </div>
+                                    
+                                    <!-- Message 4 -->
+                                    <div class="marquee-item text-center py-3">
+                                        <div class="mb-3">
+                                            <i class="bi bi-chat-heart-fill fs-1 text-success"></i>
+                                        </div>
+                                        <h4 class="h5 fw-bold text-dark mb-2">Grandissez Spirituellement</h4>
+                                        <p class="text-muted">Vivez une expérience spirituelle enrichissante au sein d'une communauté bienveillante.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Message principal -->
+                            <div class="text-center mb-4">
+                                <h4 class="h3 fw-bold text-dark mb-3">
+                                    Toi aussi, tu peux faire partie de notre communauté !
+                                </h4>
+                                <p class="text-muted fs-5">
+                                    Rejoignez le Groupe Blessing et participez à notre mission d'amour et de solidarité.
+                                </p>
+                            </div>
+                            
+                            <!-- Bouton WhatsApp -->
+                            <div class="text-center">
+                                <a href="https://wa.me/22666115158?text=Bonjour%20!%20Je%20suis%20intéressé(e)%20à%20rejoindre%20le%20Groupe%20Blessing%20et%20je%20voudrais%20en%20savoir%20plus."
+                                   target="_blank"
+                                   class="btn btn-success btn-lg px-5 py-3 fw-bold shadow-lg hover-lift"
+                                   style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border: none;">
+                                    <i class="bi bi-whatsapp me-2"></i> Nous rejoindre sur WhatsApp
+                                </a>
+                                <p class="text-muted small mt-2">
+                                    <i class="bi bi-info-circle me-1"></i> Un membre de l'équipe vous répondra rapidement
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Pied de carte décoratif -->
+                        <div class="card-footer border-0 py-3 text-center" style="background: #f8f9fa;">
+                            <div class="d-flex justify-content-center gap-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+                                    <i class="bi bi-person-plus me-1"></i> Nouveaux membres
+                                </span>
+                                <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">
+                                    <i class="bi bi-calendar-check me-1"></i> Inscriptions ouvertes
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistiques -->
+            <div class="row mt-6 g-4">
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-primary mb-2">50+</div>
+                        <p class="text-muted mb-0">Membres actifs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-warning mb-2">20+</div>
+                        <p class="text-muted mb-0">Actions réalisées</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-success mb-2">1000+</div>
+                        <p class="text-muted mb-0">Personnes aidées</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-danger mb-2">5</div>
+                        <p class="text-muted mb-0">Villes d'intervention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+    /* Animation du texte défilant */
+    .marquee-container {
+        border-radius: 12px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .marquee-content {
+        animation: marquee 25s linear infinite;
+    }
+    
+    .marquee-item {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    
+    @keyframes marquee {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-720px); /* 4 items × 180px */
+        }
+    }
+    
+    /* Pause l'animation au survol */
+    .marquee-container:hover .marquee-content {
+        animation-play-state: paused;
+    }
+    
+    /* Style pour l'image de l'équipe */
+    .shadow-xl {
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15) !important;
+    }
+    
+    /* Style pour le bouton WhatsApp */
+    .btn-success {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-success:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        transition: 0.5s;
+    }
+    
+    .btn-success:hover:before {
+        left: 100%;
+    }
+    
+    .btn-success:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3) !important;
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+        #rejoindre .row.align-items-center {
+            flex-direction: column-reverse;
+        }
+        
+        #rejoindre .col-lg-7 {
+            margin-top: 3rem;
+        }
+        
+        .marquee-container {
+            height: 150px;
+        }
+        
+        .marquee-item {
+            height: 150px;
+        }
+        
+        @keyframes marquee {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-600px); /* 4 items × 150px */
+            }
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .marquee-container {
+            height: 120px;
+        }
+        
+        .marquee-item {
+            height: 120px;
+            padding: 0 15px;
+        }
+        
+        .marquee-item h4 {
+            font-size: 1rem;
+        }
+        
+        .marquee-item p {
+            font-size: 0.85rem;
+        }
+        
+        @keyframes marquee {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-480px); /* 4 items × 120px */
+            }
+        }
+    }
+    </style>
+
+    <script>
+    // Animation supplémentaire pour la section
+    document.addEventListener('DOMContentLoaded', function() {
+        const section = document.querySelector('#rejoindre');
+        
+        // Animation des statistiques
+        const counters = document.querySelectorAll('#rejoindre .display-6');
+        const speed = 200; // Plus lent pour un effet plus doux
+        
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target') || +counter.innerText.replace('+', '');
+            const count = +counter.innerText.replace('+', '');
+            const increment = target / speed;
+            
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment) + '+';
+                setTimeout(() => animateCounter(counter), 10);
+            } else {
+                counter.innerText = target + '+';
+            }
+        };
+        
+        // Observer pour déclencher l'animation quand la section est visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    counters.forEach(counter => {
+                        counter.setAttribute('data-target', counter.innerText.replace('+', ''));
+                        counter.innerText = '0+';
+                        animateCounter(counter);
+                    });
+                    
+                    // Arrêter d'observer après l'animation
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        if (section) {
+            observer.observe(section);
+        }
+        
+        // Animation au clic sur le bouton WhatsApp
+        const whatsappBtn = document.querySelector('#rejoindre .btn-success');
+        if (whatsappBtn) {
+            whatsappBtn.addEventListener('click', function(e) {
+                // Animation de confirmation
+                this.innerHTML = '<i class="bi bi-check-circle me-2"></i> Redirection vers WhatsApp...';
+                this.classList.add('btn-secondary');
+                this.classList.remove('btn-success');
+                
+                // Petit délai pour voir l'animation
+                setTimeout(() => {
+                    this.innerHTML = '<i class="bi bi-whatsapp me-2"></i> Nous rejoindre sur WhatsApp';
+                    this.classList.remove('btn-secondary');
+                    this.classList.add('btn-success');
+                }, 1500);
+            });
+        }
+    });
+    </script>

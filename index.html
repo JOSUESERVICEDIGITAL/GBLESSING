@@ -304,6 +304,587 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
+    <!-- NOUVELLE SECTION : Rejoignez Notre Communauté -->
+   
+
+
+
+
+    <!-- NOUVELLE SECTION : Rejoignez Notre Communauté -->
+    <section id="rejoindre" class="py-6 py-lg-8 position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(29,78,216,0.05) 0%, rgba(249,115,22,0.05) 100%);">
+        <!-- Éléments décoratifs -->
+        <div class="position-absolute top-0 start-0 w-50 h-50" style="background: radial-gradient(circle, rgba(29,78,216,0.1) 0%, transparent 70%); transform: translate(-25%, -25%);"></div>
+        <div class="position-absolute bottom-0 end-0 w-50 h-50" style="background: radial-gradient(circle, rgba(249,115,22,0.1) 0%, transparent 70%); transform: translate(25%, 25%);"></div>
+        
+        <div class="container position-relative">
+            <div class="row align-items-center g-5">
+                <!-- Photo de l'équipe (grande image) -->
+                <div class="col-lg-7">
+                    <div class="position-relative rounded-4 overflow-hidden shadow-xl" style="height: 500px;">
+                        <!-- Image principale de l'équipe - Chargée depuis Google Sheets -->
+                        <img id="equipe-photo" 
+                             alt="Équipe du Groupe Blessing"
+                             class="w-100 h-100 object-fit-cover"
+                             style="filter: brightness(0.95);"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600&q=80'">
+                        
+                        <!-- Overlay décoratif -->
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(45deg, rgba(29,78,216,0.2) 0%, rgba(249,115,22,0.2) 100%);"></div>
+                        
+                        <!-- Badge flottant -->
+                        <div class="position-absolute top-4 start-4 bg-white px-3 py-2 rounded-3 shadow-sm">
+                            <span class="fw-bold text-primary">👥 Notre Équipe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carte avec texte défilant -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-xl overflow-hidden" style="border-radius: 20px;">
+                        <!-- En-tête de la carte -->
+                        <div class="card-header border-0 py-4" style="background: linear-gradient(135deg, #f97316 0%, #dc2626 100%);">
+                            <div class="text-center">
+                                <h3 class="h2 fw-bold text-white mb-2">
+                                    <i class="bi bi-people-fill me-2"></i>Rejoignez-Nous
+                                </h3>
+                                <p class="text-white opacity-90 mb-0">Faites partie de notre mission</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Corps de la carte avec texte défilant -->
+                        <div class="card-body p-4 p-lg-5 position-relative" style="min-height: 300px; background: #fff;">
+                            <!-- Texte défilant - Contenu chargé depuis Google Sheets -->
+                            <div class="marquee-container position-relative overflow-hidden mb-4" style="height: 180px;">
+                                <div id="marquee-content" class="marquee-content position-absolute w-100">
+                                    <!-- Les messages seront chargés ici depuis Google Sheets -->
+                                    <div class="text-center py-5">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Chargement...</span>
+                                        </div>
+                                        <p class="text-muted mt-2">Chargement des messages...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Message principal -->
+                            <div class="text-center mb-4">
+                                <h4 id="message-principal" class="h3 fw-bold text-dark mb-3">
+                                    Toi aussi, tu peux faire partie de notre communauté !
+                                </h4>
+                                <p id="sous-message" class="text-muted fs-5">
+                                    Rejoignez le Groupe Blessing et participez à notre mission d'amour et de solidarité.
+                                </p>
+                            </div>
+                            
+                            <!-- Bouton WhatsApp - Numéro chargé depuis Google Sheets -->
+                            <div class="text-center">
+                                <a id="whatsapp-btn"
+                                   target="_blank"
+                                   class="btn btn-success btn-lg px-5 py-3 fw-bold shadow-lg hover-lift"
+                                   style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border: none;">
+                                    <i class="bi bi-whatsapp me-2"></i> Nous rejoindre sur WhatsApp
+                                </a>
+                                <p class="text-muted small mt-2">
+                                    <i class="bi bi-info-circle me-1"></i> Un membre de l'équipe vous répondra rapidement
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Pied de carte décoratif -->
+                        <div class="card-footer border-0 py-3 text-center" style="background: #f8f9fa;">
+                            <div class="d-flex justify-content-center gap-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+                                    <i class="bi bi-person-plus me-1"></i> Nouveaux membres
+                                </span>
+                                <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">
+                                    <i class="bi bi-calendar-check me-1"></i> Inscriptions ouvertes
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistiques - Chargées depuis Google Sheets -->
+            <div class="row mt-6 g-4" id="statistiques-container">
+                <!-- Les statistiques seront chargées ici depuis Google Sheets -->
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-primary mb-2">0+</div>
+                        <p class="text-muted mb-0">Membres actifs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-warning mb-2">0+</div>
+                        <p class="text-muted mb-0">Actions réalisées</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-success mb-2">0+</div>
+                        <p class="text-muted mb-0">Personnes aidées</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="display-6 fw-bold text-danger mb-2">0</div>
+                        <p class="text-muted mb-0">Villes d'intervention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+    /* Animation du texte défilant */
+    .marquee-container {
+        border-radius: 12px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .marquee-content {
+        animation: marquee 25s linear infinite;
+    }
+    
+    .marquee-item {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    
+    @keyframes marquee {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-720px); /* 4 items × 180px */
+        }
+    }
+    
+    /* Pause l'animation au survol */
+    .marquee-container:hover .marquee-content {
+        animation-play-state: paused;
+    }
+    
+    /* Style pour l'image de l'équipe */
+    .shadow-xl {
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15) !important;
+    }
+    
+    /* Style pour le bouton WhatsApp */
+    .btn-success {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-success:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        transition: 0.5s;
+    }
+    
+    .btn-success:hover:before {
+        left: 100%;
+    }
+    
+    .btn-success:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3) !important;
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+        #rejoindre .row.align-items-center {
+            flex-direction: column-reverse;
+        }
+        
+        #rejoindre .col-lg-7 {
+            margin-top: 3rem;
+        }
+        
+        .marquee-container {
+            height: 150px;
+        }
+        
+        .marquee-item {
+            height: 150px;
+        }
+        
+        @keyframes marquee {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-600px); /* 4 items × 150px */
+            }
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .marquee-container {
+            height: 120px;
+        }
+        
+        .marquee-item {
+            height: 120px;
+            padding: 0 15px;
+        }
+        
+        .marquee-item h4 {
+            font-size: 1rem;
+        }
+        
+        .marquee-item p {
+            font-size: 0.85rem;
+        }
+        
+        @keyframes marquee {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-480px); /* 4 items × 120px */
+            }
+        }
+    }
+    </style>
+
+    <script>
+    // Configuration Google Sheets
+    const COMMUNITY_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRZHE5b1yKiJ4V4HE2Xm-VYRzSqBkTrGL1bMee0v_JwHThOrpKKo_jP1gjr2VvFHR7bgSURnlsih-CX/pub?gid=0&single=true&output=csv";
+    
+    // Icônes disponibles pour les messages
+    const ICONS = {
+        'coeur': 'bi-heart-fill',
+        'main': 'bi-hand-thumbs-up-fill',
+        'partage': 'bi-share-fill',
+        'chat': 'bi-chat-heart-fill',
+        'personne': 'bi-person-fill',
+        'groupe': 'bi-people-fill',
+        'don': 'bi-gift-fill',
+        'priere': 'bi-chat-square-heart-fill'
+    };
+    
+    // Couleurs pour les icônes
+    const ICON_COLORS = {
+        'coeur': 'danger',
+        'main': 'warning',
+        'partage': 'primary',
+        'chat': 'success',
+        'personne': 'info',
+        'groupe': 'secondary',
+        'don': 'purple',
+        'priere': 'pink'
+    };
+
+    // Fonction pour charger les données de la communauté depuis Google Sheets
+    async function loadCommunityData() {
+        try {
+            console.log('📥 Chargement des données communauté depuis Google Sheets...');
+            const response = await fetch(COMMUNITY_SHEET_URL);
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP! status: ${response.status}`);
+            }
+            
+            const csvText = await response.text();
+            console.log('📄 CSV communauté reçu:', csvText.substring(0, 200) + '...');
+            
+            // Parser le CSV
+            const rows = csvText.split('\n').filter(row => row.trim() !== '');
+            
+            if (rows.length === 0) {
+                throw new Error('Le CSV communauté est vide');
+            }
+            
+            const headers = rows[0].split(',').map(h => h.trim());
+            console.log('📋 En-têtes communauté:', headers);
+            
+            // Vérifier la structure attendue
+            // Structure attendue: PHOTO, TITRE, MESSAGE, ICONE, VALEUR, LABEL, COULEUR, WHATSAPP, MESSAGE_PRINCIPAL, SOUS_MESSAGE
+            
+            // Traiter chaque ligne (sauter l'en-tête)
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                const columns = row.split(',').map(col => col.trim());
+                
+                if (columns.length >= 3) {
+                    const type = columns[0] || '';
+                    
+                    switch(type.toLowerCase()) {
+                        case 'photo':
+                            loadPhoto(columns);
+                            break;
+                        case 'message':
+                            loadMessage(columns);
+                            break;
+                        case 'statistique':
+                            loadStatistique(columns);
+                            break;
+                        case 'configuration':
+                            loadConfiguration(columns);
+                            break;
+                    }
+                }
+            }
+            
+            // Démarrer l'animation du texte défilant après le chargement
+            startMarqueeAnimation();
+            
+        } catch (error) {
+            console.error('❌ Erreur chargement données communauté:', error);
+            showErrorMessage();
+        }
+    }
+    
+    // Fonction pour charger la photo
+    function loadPhoto(columns) {
+        if (columns.length >= 2) {
+            const photoUrl = columns[1];
+            const equipePhoto = document.getElementById('equipe-photo');
+            
+            if (equipePhoto && photoUrl) {
+                console.log('📸 Chargement photo équipe:', photoUrl);
+                equipePhoto.src = getImageUrl(photoUrl);
+            }
+        }
+    }
+    
+    // Fonction pour charger un message défilant
+    function loadMessage(columns) {
+        if (columns.length >= 4) {
+            const icone = columns[1];
+            const titre = columns[2];
+            const message = columns[3];
+            
+            const marqueeContent = document.getElementById('marquee-content');
+            if (marqueeContent) {
+                const iconClass = ICONS[icone] || 'bi-chat-heart-fill';
+                const iconColor = ICON_COLORS[icone] || 'primary';
+                
+                const messageHtml = `
+                    <div class="marquee-item text-center py-3">
+                        <div class="mb-3">
+                            <i class="bi ${iconClass} fs-1 text-${iconColor}"></i>
+                        </div>
+                        <h4 class="h5 fw-bold text-dark mb-2">${titre}</h4>
+                        <p class="text-muted">${message}</p>
+                    </div>
+                `;
+                
+                marqueeContent.innerHTML += messageHtml;
+            }
+        }
+    }
+    
+    // Fonction pour charger une statistique
+    function loadStatistique(columns) {
+        if (columns.length >= 4) {
+            const valeur = columns[1];
+            const label = columns[2];
+            const couleur = columns[3] || 'primary';
+            
+            const statsContainer = document.getElementById('statistiques-container');
+            if (statsContainer) {
+                const statHtml = `
+                    <div class="col-md-3 col-6">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-${couleur} mb-2" data-target="${valeur}">0${valeur.includes('+') ? '+' : ''}</div>
+                            <p class="text-muted mb-0">${label}</p>
+                        </div>
+                    </div>
+                `;
+                
+                statsContainer.innerHTML = '';
+                // Note: Nous devons reconstruire toutes les statistiques à partir des données
+                // Pour simplifier, on pourrait stocker temporairement et tout reconstruire à la fin
+            }
+        }
+    }
+    
+    // Fonction pour charger la configuration
+    function loadConfiguration(columns) {
+        if (columns.length >= 4) {
+            const configType = columns[1];
+            const valeur = columns[2];
+            
+            switch(configType.toLowerCase()) {
+                case 'whatsapp':
+                    setupWhatsAppButton(valeur);
+                    break;
+                case 'message_principal':
+                    document.getElementById('message-principal').textContent = valeur;
+                    break;
+                case 'sous_message':
+                    document.getElementById('sous-message').textContent = valeur;
+                    break;
+            }
+        }
+    }
+    
+    // Fonction pour configurer le bouton WhatsApp
+    function setupWhatsAppButton(phoneNumber) {
+        const whatsappBtn = document.getElementById('whatsapp-btn');
+        if (whatsappBtn && phoneNumber) {
+            // Nettoyer le numéro (enlever les espaces, +, etc.)
+            const cleanNumber = phoneNumber.replace(/\s+/g, '').replace('+', '');
+            const message = encodeURIComponent("Bonjour ! Je suis intéressé(e) à rejoindre le Groupe Blessing et je voudrais en savoir plus.");
+            
+            whatsappBtn.href = `https://wa.me/${cleanNumber}?text=${message}`;
+            
+            // Ajouter l'événement click
+            whatsappBtn.addEventListener('click', function(e) {
+                // Animation de confirmation
+                const originalHtml = this.innerHTML;
+                this.innerHTML = '<i class="bi bi-check-circle me-2"></i> Redirection vers WhatsApp...';
+                this.classList.add('btn-secondary');
+                this.classList.remove('btn-success');
+                
+                setTimeout(() => {
+                    this.innerHTML = originalHtml;
+                    this.classList.remove('btn-secondary');
+                    this.classList.add('btn-success');
+                }, 1500);
+            });
+        }
+    }
+    
+    // Fonction pour démarrer l'animation du texte défilant
+    function startMarqueeAnimation() {
+        const marqueeContent = document.getElementById('marquee-content');
+        if (marqueeContent && marqueeContent.children.length > 0) {
+            // Calculer la hauteur totale pour l'animation
+            const itemHeight = 180; // hauteur de chaque élément
+            const totalHeight = itemHeight * marqueeContent.children.length;
+            
+            // Mettre à jour l'animation CSS
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes marquee {
+                    0% { transform: translateY(0); }
+                    100% { transform: translateY(-${totalHeight}px); }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    }
+    
+    // Fonction utilitaire pour les URLs d'images (réutilisée depuis votre code)
+    function getImageUrl(url) {
+        if (!url || typeof url !== 'string' || url.trim() === '') {
+            return 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600&q=80';
+        }
+        
+        url = url.trim();
+        
+        if (url.startsWith('http')) {
+            return url;
+        }
+        
+        if (url.includes('drive.google.com')) {
+            try {
+                const match1 = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+                if (match1 && match1[1]) {
+                    return `https://drive.google.com/thumbnail?id=${match1[1]}&sz=w1200-h600`;
+                }
+            } catch (e) {
+                console.error('Erreur conversion Drive:', e);
+            }
+        }
+        
+        return url;
+    }
+    
+    // Fonction pour afficher un message d'erreur
+    function showErrorMessage() {
+        const marqueeContent = document.getElementById('marquee-content');
+        if (marqueeContent) {
+            marqueeContent.innerHTML = `
+                <div class="text-center py-5">
+                    <i class="bi bi-exclamation-triangle text-warning fs-1"></i>
+                    <p class="text-muted mt-2">Données temporairement indisponibles</p>
+                </div>
+            `;
+        }
+    }
+    
+    // Animation des statistiques
+    function animateStatistics() {
+        const counters = document.querySelectorAll('#statistiques-container .display-6');
+        const speed = 200;
+        
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target') || +counter.innerText.replace('+', '');
+            const count = +counter.innerText.replace('+', '');
+            const increment = target / speed;
+            
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment) + (counter.getAttribute('data-target')?.includes('+') ? '+' : '');
+                setTimeout(() => animateCounter(counter), 10);
+            } else {
+                counter.innerText = target + (counter.getAttribute('data-target')?.includes('+') ? '+' : '');
+            }
+        };
+        
+        // Observer pour déclencher l'animation quand la section est visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    counters.forEach(counter => {
+                        if (!counter.getAttribute('data-target')) {
+                            counter.setAttribute('data-target', counter.innerText.replace('+', ''));
+                        }
+                        const currentValue = +counter.innerText.replace('+', '');
+                        if (currentValue === 0) {
+                            counter.innerText = '0' + (counter.getAttribute('data-target')?.includes('+') ? '+' : '');
+                            animateCounter(counter);
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        const section = document.querySelector('#rejoindre');
+        if (section) {
+            observer.observe(section);
+        }
+    }
+    
+    // Initialisation au chargement de la page
+    document.addEventListener('DOMContentLoaded', function() {
+        // Charger les données de la communauté
+        loadCommunityData();
+        
+        // Configurer l'animation des statistiques
+        setTimeout(animateStatistics, 1000);
+    });
+    </script>
+
+
+
+
+
+
+
+
     <!-- Section Actions -->
     <section id="actions" class="py-5 bg-light position-relative overflow-hidden">
         <!-- Éléments décoratifs d'arrière-plan -->
