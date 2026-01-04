@@ -1221,12 +1221,29 @@ document.addEventListener('click', function(e) {
   const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQdRnhOiKZe7UaxNLYhR3U6p_DV99p7qpRl0gwfJdbex4HxANMHTecwETWXv2oiLTx6_CkfwVvX8plT/pub?gid=0&single=true&output=csv";
 
   // Fonction pour transformer un lien Google Drive classique en lien direct
-  function convertDriveLink(url) {
+// Fonction améliorée pour convertir les liens Google Drive
+function convertDriveLink(url) {
     if (!url) return "";
-    const match = url.match(/\/d\/([a-zA-Z0-9_-]+)\//);
-    return match ? `https://drive.google.com/uc?export=view&id=${match[1]}` : url;
-  }
-
+    
+    // Plusieurs formats de liens Google Drive
+    const patterns = [
+        /\/d\/([a-zA-Z0-9_-]+)\//,  // Format standard
+        /id=([a-zA-Z0-9_-]+)/,      // Format avec id=
+        /file\/d\/([a-zA-Z0-9_-]+)/ // Format alternatif
+    ];
+    
+    for (const pattern of patterns) {
+        const match = url.match(pattern);
+        if (match) {
+            return `https://drive.google.com/thumbnail?id=${match[1]}&sz=s400`;
+            // ou pour l'image originale : 
+            // return `https://drive.google.com/uc?export=view&id=${match[1]}`;
+        }
+    }
+    
+    // Si ce n'est pas un lien Google Drive, retourner l'URL tel quel
+    return url;
+}
   async function loadSongs() {
     try {
       const response = await fetch(SHEET_URL);
